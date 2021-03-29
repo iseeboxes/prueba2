@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+	--color-gris:#EFEFEF;
+	--color-azul:#200769;
+	--color-amarillo:#F1B327;
+	--color-blanco:white;
+}
+*{padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+font-family: 'Roboto', sans-serif;
+max-width: 1440px;
+margin: 0 auto;
+}
+
+a{
+	text-decoration: none;	
+	color:var(--color-blanco);
+}
+	header{
+	height:100px;
+	width: 100%;
+	display: flex;
+	font-size: 13px;
+	background-color:var(--color-gris);
+}
+.logo{
+	height: 90px;
+	width:20%;
+	background-color:var(--color-gris);
+}
+
+.logo img{
+	width: 50%;
+	height: 100%;
+	margin-left: 20px;
+}
+.medio{
+	height:90px; 
+	width:170px;
+	background-image: url(imagenes/top_arrow.png),url(imagenes/top_arrow1.png);
+	background-repeat: no-repeat;
+	background-position: 77px,18px -1px;
+	background-color: var(--color-gris);
+
+}
+.derecha{
+	height:90px;
+	width:80%;
+	background-color:var(--color-azul);
+}
+.derecha ul li{
+list-style: none;
+display: inline-block;
+color:var(--color-blanco);
+margin: 10px;
+}
+.derecha ul li a{
+	text-decoration: none;
+	color:var(--color-blanco);
+}
+section{
+width: 100%;
+height: 100%;
+margin-top: -20px;
+}
+.fondopantalla{
+background-image: url(imagenes/banner2copia.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.contenedor{
+	width: 90%;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	margin: 1% auto;
+
+}
+.text-section{
+	height:350px;
+	width:400px;
+	margin-top: 50px;
+
+}
+.imagen{
+	height: 350px;
+	width: 600px;
+	margin-top: 10px;
+}
+.text-section h1{
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+.text-section p{
+	font-size:14px;
+	text-align:justify;
+}
+.imagen img{
+	max-width: 100%;
+}
+.leer-mas{
+	height:50px;
+	width: 200px;
+	margin-top: 10px;
+	text-align: center;
+	padding-top: 13px;
+	border-radius: 15px;
+	background-color:var(--color-amarillo);
+	color:var(--color-blanco);
+	text-transform: uppercase;
+
+}
+
+
+
+.mision-vision{
+	width: 30%;
+	height: 350px;
+	box-shadow: 5px 5px 20px rgb(0,0,128);
+	border-radius: 10px;
+}
+
+.mision-vision:hover{
+background-color: white;
+transform: scale(1.1);
+transition: 1s ease;
+}
+ .mision-vision h2{
+ 	text-align: center;
+ 	padding: 10px;
+ 	text-decoration:underline;
+ 	
+
+ }
+
+ .mision-vision p{
+ 	text-align: center;
+ 	padding: 5px;
+ }
+
+.encabezado-mision{
+	width: 450px;
+	height: 50px;
+	margin: 2% auto;
+	margin-bottom: 60px;
+	text-transform: uppercase;
+	color:var(--color-azul);
+	font-size: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.objetivos{
+	color:var(--color-amarillo);
+}
+.seccion3{
+	width:100%; 
+	height:400px;
+	display: flex;
+	margin-top:10px;
+}
+
+.materias{
+	width: 500px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	
+
+}
+.areas-conocimiento{
+	width: 40%;
+	height: 160px;
+	padding: 10px;
+	text-align: center;
+}
+
+.areas-conocimiento h1{
+	text-transform: uppercase;
+	color:var(--color-azul);
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.areas-tamaño{
+	width: 150px;
+	height: 150px;
+}
+
+.areas-tamaño img{
+	width: 100%;
+	height:auto;
+	box-shadow: 5px 5px 10px rgb(0,0,0,.5);
+}
+
+.areas-tamaño:hover{
+	transform: scale(1.1);
+	transition: 1s ease;
+}
+
+.imagen-conocimiento{
+	width: 100%;
+	height: 230px;
+
+}
+
+.imagen-conocimiento img{
+	width: 100%;
+	height:auto;
+	padding-top: 40px;
+}
+
+.seccion4{
+	width:100%; 
+	height:425px;
+	margin-top:10px;
+	background-color:rgba(239,239,239,.5);
+}
+
+.sin-flex{
+display: block;
+}
+
+.coleccion-bicentenario{
+	width: 450px;
+	height: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	color:var(--color-azul);
+	font-size: 20px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.coleccion{
+	color:var(--color-amarillo);
+}
+/*estilo del acordeon*/
+.accordion {
+    box-sizing: border-box;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    width: 113%;
+    margin-left: -50px;
+}
+
+.accordion-select {
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.accordion-title {
+    position: relative;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border: 1px solid transparent;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.accordion-title span {
+    bottom: 0px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.accordion-content {
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+    transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+/* Generated styles starts here */
+
+.accordion {
+    border-color: #335ea1;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: row;
+    height: 282px;
+} 
+
+.accordion-title,
+.accordion-select  {
+    background-color: #297aff;
+    color: #ffffff;
+    width: 42px;
+    height: 100%;
+    font-size: 32px;
+}
+
+.accordion-select {
+    margin-bottom: -65px;
+    margin-right: -42px;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border-bottom-color: transparent;
+    border-right-color: #568eea;
+} 
+
+.accordion-select:hover + .accordion-title,
+.accordion-select:checked + .accordion-title {
+    background-color: #156dfd;
+} 
+
+ .accordion-title span  {	
+    transform: rotate(-90deg);
+    -ms-writing-mode: lr-bt;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    padding-bottom: 21px;
+    padding-top: 21px;
+    line-height: 42px;
+} 
+
+.accordion-content {
+    background-color: #568eea;
+    color: #ffffff;
+    height: 100%;
+    margin-bottom: 0;
+    margin-right: calc(-1 * calc(100% - 210px));
+    padding: 30px;
+    width: calc(100% - 210px);
+} 
+.acordeon-coleccion{
+	width:120%;
+	height:auto;
+	margin: 0 auto;
+}
+.acordeon-coleccion li{
+margin: 15px;
+
+}
+.acordeon-coleccion li a:hover{
+	color: black;
+	font-weight: 700;
+
+
+}
+
+.acordeon-coleccion{
+	width: 90%;
+
+}
+.requisitos-inscripcion{
+	height:200px;
+}
+.requisitos-inscripcion ul li{
+color: black;
+text-align: center;
+}
+.requisitos-inscripcion ul{
+list-style: none;
+display: flex;
+justify-content: space-around;
+}
+
+i{
+	font-size: 60px;
+	padding-bottom: 10px;
+	text-shadow: 5px 5px 10px rgb(0,0,0,.2);
+	color:var(--color-azul);
+}
+
+i:hover{
+background-color: white;
+transform: scale(1.1);
+transition: 1s ease;
+}
+
+footer{
+width: 100%;
+height: 100%;
+margin-top: 100px;
+background-color: #180B3F;
+
+}
+
+.footer-logo{
+	width:100px;
+	height:100px;
+	background-color: #180B3F;
+	margin: 0 auto;
+}
+.footer-logo img{
+width: 100%;
+height:auto;
+}
+
+.footer-nombre{
+	width:400px; 
+	height:auto;
+	text-align: center;
+	background-color: #180B3F;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 10px;
+
+}
+
+.footer-diseño{
+	width:100%; 
+	height:40px;
+	background-color:var(--color-azul);
+	color:white;
+	text-align: center;
+	padding: 10px;
+
+
+}
+
+.footer-contenedor{
+display: flex;
+}
+
+.espacio ul li{
+margin-bottom: 20px;
+list-style:none;
+
+}
+
+
+.footer-lista{
+padding-right: 20px;
+}
+
+.izquierda-lista{
+margin-left: auto;
+margin-right: 50px;
+
+
+
+}
+
+.requisitos-inscripcion ul li{
+
+	animation-name: colores;
+	animation-duration: 5s; 
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+
+}
+@keyframes colores{
+	50%{
+		color:blue;
+		transform: scale(.9);
+	}
+	100%{
+		color:cornflowerblue;
+		transform: scale(1);
+	}
+	
+	
+
+}
+
